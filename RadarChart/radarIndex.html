@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Seymour Dashboard Graphics</title>
+<!--	Load blank css style sheet	-->
+		<link rel="stylesheet" type="text/css" href="/RadarChart/style.css" >
+	
+<!--	Load D3.V4		-->
+		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+		
+<!--	Load jQuery-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">
+		</script>
+		
+<!--	Load crossfilter version 1.4.0	-->
+<!--	<script type="text/javascript" src="/crossfilter.min.js"></script>-->
+	</head>
+
+<!--	CSS styling for autocomplete search, only. Other styling done in D3-->
+	
+	<style>
+		html, body {
+			font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+		}
+	#autoCompWrapper	{
+			
+	width:100%;
+	}
+		
+		.bp-ac, .padded-row, bp-autocomplete-holder {
+			width:inherit;
+		}
+		
+		.bp-autocomplete-holder input.form-control {
+			width:100%;
+			font-size: 18px;
+		}
+		
+		.areaLegend {
+			
+		}
+		
+	</style>
+	
+	<body>
+
+		<!--	Div	container for the autocomplete search bar-->
+		<div id="autoCompWrapper"></div>
+		<div id="toggleBox">
+		<button id="toggleChart">Switch Chart</button>
+		</div>
+		
+	</body>
+	
+<!--	Call radarChart script to build chart	-->
+	<script src ="/RadarChart/radarChart.js"></script>
+	
+</html>
